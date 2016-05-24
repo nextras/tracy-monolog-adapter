@@ -1,0 +1,30 @@
+{
+	"name": "nextras/tracy-monolog-adapter",
+	"type": "library",
+	"description": "Nextras Tracy-Monolog Adapter",
+	"keywords": ["monolog", "nette", "nextras", "logger"],
+	"homepage": "https://github.com/nextras/tracy-monolog-adapter",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{ "name": "Nextras Project", "homepage": "https://github.com/nextras/tracy-monolog-adapter/graphs/contributors" }
+	],
+	"support": {
+		"issues": "https://github.com/nextras/tracy-monolog-adapter/issues"
+	},
+	"require": {
+		"php": ">=7.0",
+		"tracy/tracy": "~2.3",
+		"monolog/monolog": "~1.9"
+	},
+	"require-dev": {
+		"nette/di": "~2.2"
+	},
+	"autoload": {
+		"psr-4": { "Nextras\\TracyMonologAdapter\\": "src/" }
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1-dev"
+		}
+	}
+}
