@@ -37,7 +37,6 @@ class TracyExceptionProcessor
 			if ($record['message'] === '') {
 				$record['message'] = self::formatMessage($record['context']['exception']);
 			}
-			unset($record['context']['exception']);
 		}
 		return $record;
 	}
