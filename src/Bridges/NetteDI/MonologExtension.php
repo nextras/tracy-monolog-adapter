@@ -11,7 +11,6 @@ use Monolog\Handler\RotatingFileHandler;
 use Monolog\Logger as MonologLogger;
 use Nette\DI\CompilerExtension;
 use Nette\DI\Helpers;
-use Nette\DI\Statement;
 use Nette\PhpGenerator\ClassType;
 use Nextras\TracyMonologAdapter\Logger;
 use Nextras\TracyMonologAdapter\Processors\TracyExceptionProcessor;
