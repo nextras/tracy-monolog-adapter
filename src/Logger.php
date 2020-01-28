@@ -16,7 +16,7 @@ use Tracy\ILogger;
 class Logger implements ILogger
 {
 	/** @const Tracy priority to Monolog priority mapping */
-	const PRIORITY_MAP = [
+	protected const PRIORITY_MAP = [
 		self::DEBUG => Monolog\Logger::DEBUG,
 		self::INFO => Monolog\Logger::INFO,
 		self::WARNING => Monolog\Logger::WARNING,
@@ -35,7 +35,7 @@ class Logger implements ILogger
 	}
 
 
-	public function log($message, $priority = self::INFO)
+	public function log($message, $priority = self::INFO) :void
 	{
 		$context = [
 			'at' => Helpers::getSource(),
