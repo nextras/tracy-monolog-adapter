@@ -35,7 +35,7 @@ class Logger implements ILogger
 	}
 
 
-	public function log($message, $priority = self::INFO)
+	public function log($message, $priority = self::INFO) :void
 	{
 		$context = [
 			'at' => Helpers::getSource(),

@@ -28,7 +28,7 @@ class TracyExceptionProcessor
 	}
 
 
-	public function __invoke(array $record)
+	public function __invoke(array $record): array
 	{
 		foreach (['exception', 'error'] as $key) {
 			if (isset($record['context'][$key]) && $record['context'][$key] instanceof Throwable) {
