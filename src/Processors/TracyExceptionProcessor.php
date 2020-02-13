@@ -95,7 +95,7 @@ class TracyExceptionProcessor
 			) . ' in ' . $message->getFile() . ':' . $message->getLine();
 			$message = $message->getPrevious();
 		}
-		$message = implode($tmp, "\ncaused by ");
+		$message = implode("\ncaused by ", $tmp);
 		return trim($message);
 	}
 }
